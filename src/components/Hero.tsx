@@ -129,16 +129,27 @@ export function Hero() {
 
             {/* Right Side - Video Controls + CTA + Mobile Menu */}
             <div className="flex items-center space-x-3 relative">
-              {/* CTA Button - Hidden on mobile */}
-              <Link to="/articles" className="hidden sm:block ml-4">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="bg-red-600 backdrop-blur-sm text-white font-semibold px-6 py-3 rounded-md hover:bg-red-700 gentle-animation cursor-pointer"
-                >
-                  Articles
-                </motion.button>
-              </Link>
+              {/* CTA Buttons - Hidden on mobile */}
+              <div className="hidden sm:flex items-center gap-3 ml-4">
+                <Link to="/articles">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-white/10 border border-white/20 backdrop-blur-sm text-white font-semibold px-6 py-3 rounded-md hover:bg-white/20 gentle-animation cursor-pointer"
+                  >
+                    Articles
+                  </motion.button>
+                </Link>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6Rpa3wrhjzOYWRck8Qu-CSG73aAyTMAj8Tz7dEXCsdYjelg/viewform" target="_blank" rel="noopener noreferrer">
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="bg-red-600 backdrop-blur-sm text-white font-semibold px-6 py-3 rounded-md hover:bg-red-700 gentle-animation cursor-pointer shadow-lg shadow-red-600/20"
+                  >
+                    Join Us
+                  </motion.button>
+                </a>
+              </div>
 
               {/* Mobile Hamburger Menu Button */}
               <button
@@ -223,16 +234,27 @@ export function Hero() {
               </a>
             </div>
 
-            {/* Mobile CTA Button */}
-            <Link to="/articles" className="mt-8 block" onClick={() => setIsMobileMenuOpen(false)}>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full bg-red-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-red-700 active:bg-red-800 gentle-animation cursor-pointer"
-              >
-                Articles
-              </motion.button>
-            </Link>
+            {/* Mobile CTA Buttons */}
+            <div className="mt-8 flex flex-col gap-4">
+              <Link to="/articles" onClick={() => setIsMobileMenuOpen(false)}>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="w-full bg-white/10 border border-white/20 text-white font-semibold px-6 py-3 rounded-lg hover:bg-white/20 active:bg-white/30 gentle-animation cursor-pointer"
+                >
+                  Articles
+                </motion.button>
+              </Link>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSe6Rpa3wrhjzOYWRck8Qu-CSG73aAyTMAj8Tz7dEXCsdYjelg/viewform" target="_blank" rel="noopener noreferrer" onClick={() => setIsMobileMenuOpen(false)}>
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="w-full bg-red-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-red-700 active:bg-red-800 gentle-animation cursor-pointer shadow-lg shadow-red-600/20"
+                >
+                  Join Us
+                </motion.button>
+              </a>
+            </div>
           </div>
         </div>
       </motion.div>
