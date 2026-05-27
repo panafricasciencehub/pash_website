@@ -146,10 +146,10 @@ export function Portfolio() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="min-w-[85vw] md:min-w-[600px] lg:min-w-[800px] snap-center shrink-0 flex flex-col bg-white clean-border rounded-3xl overflow-hidden elevated-shadow group cursor-grab active:cursor-grabbing"
+              className="w-[85vw] max-w-[320px] sm:max-w-none sm:w-auto sm:min-w-[400px] md:min-w-[600px] lg:min-w-[800px] snap-center shrink-0 flex flex-col bg-white clean-border rounded-3xl overflow-hidden elevated-shadow group cursor-grab active:cursor-grabbing"
             >
               {/* Image Container */}
-              <div className="relative h-64 sm:h-80 w-full overflow-hidden shrink-0">
+              <div className="relative h-48 sm:h-64 lg:h-80 w-full overflow-hidden shrink-0">
                 <img
                   src={project.image}
                   alt={project.title}
@@ -165,7 +165,7 @@ export function Portfolio() {
               </div>
 
               {/* Content Box */}
-              <div className="p-8 lg:p-10 flex flex-col flex-grow">
+              <div className="p-6 sm:p-8 lg:p-10 flex flex-col flex-grow">
                 <div className="flex items-center gap-4 mb-4">
                   <span className="bg-accent-purple/90 text-white px-3 py-1 rounded-full text-sm font-medium shadow-sm">
                     {project.industry}
@@ -175,7 +175,7 @@ export function Portfolio() {
                   </span>
                 </div>
 
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+                <h3 className="text-lg sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 leading-snug">
                   {project.title}
                 </h3>
 

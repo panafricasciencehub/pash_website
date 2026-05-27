@@ -113,7 +113,7 @@ export function Services() {
           {/* First Clothesline - Top Row */}
           <div className="relative mb-24" style={{ overflow: 'visible' }}>
             {/* Ultra-Realistic Rope - Full width from edge to edge */}
-            <div className="absolute top-8 left-0 right-0 h-4 rope-sway">
+            <div className="absolute top-8 left-0 right-0 h-4 rope-sway hidden sm:block">
               {/* Rope base with realistic hemp coloring */}
               <div className="w-full h-full bg-gradient-to-b from-yellow-800 via-amber-900 to-yellow-900 rounded-full shadow-lg" />
 
@@ -179,19 +179,19 @@ export function Services() {
             </div>
 
             {/* Heavy-duty wall anchor points */}
-            <div className="absolute left-0 sm:-left-10 top-4 w-10 h-10 bg-gradient-to-br from-gray-500 to-gray-800 rounded-full shadow-xl border border-gray-400">
+            <div className="absolute left-0 sm:-left-10 top-4 w-10 h-10 bg-gradient-to-br from-gray-500 to-gray-800 rounded-full shadow-xl border border-gray-400 hidden sm:block">
               <div className="absolute top-1.5 left-1.5 w-3 h-3 bg-gray-300 rounded-full opacity-80" />
               <div className="absolute bottom-1.5 right-1.5 w-1.5 h-1.5 bg-black/60 rounded-full" />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1 h-1 bg-gray-900 rounded-full" />
             </div>
-            <div className="absolute right-0 sm:-right-10 top-4 w-10 h-10 bg-gradient-to-br from-gray-500 to-gray-800 rounded-full shadow-xl border border-gray-400">
+            <div className="absolute right-0 sm:-right-10 top-4 w-10 h-10 bg-gradient-to-br from-gray-500 to-gray-800 rounded-full shadow-xl border border-gray-400 hidden sm:block">
               <div className="absolute top-1.5 left-1.5 w-3 h-3 bg-gray-300 rounded-full opacity-80" />
               <div className="absolute bottom-1.5 right-1.5 w-1.5 h-1.5 bg-black/60 rounded-full" />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1 h-1 bg-gray-900 rounded-full" />
             </div>
 
             {/* Photos hanging from first line */}
-            <div className="flex flex-wrap justify-center gap-4 sm:gap-8 lg:gap-16 pt-20 max-w-7xl mx-auto px-4">
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-8 lg:gap-16 pt-8 sm:pt-20 max-w-7xl mx-auto px-4">
               {services.slice(0, 3).map((service, index) => (
                 <div
                   key={service.id}
@@ -205,7 +205,7 @@ export function Services() {
                   onMouseLeave={() => setHoveredPhoto(null)}
                 >
                   {/* Simple Realistic Wooden Clothespin */}
-                  <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-20">
+                  <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-20 hidden sm:block">
                     {/* Clothespin body */}
                     <div className="relative w-5 h-10">
                       {/* Left wooden half */}
@@ -260,7 +260,7 @@ export function Services() {
                   </div>
 
                   {/* Photo */}
-                  <div className="relative bg-white p-4 pb-8 shadow-2xl cursor-pointer w-[260px] sm:w-[280px] max-w-[90vw]"
+                  <div className="relative bg-white p-4 pb-8 shadow-2xl cursor-pointer w-full max-w-[300px] sm:w-[280px] sm:max-w-[90vw] mx-auto"
                     style={{
                       filter: hoveredPhoto === service.id ? 'brightness(1.1) contrast(1.05)' : 'brightness(1) contrast(0.95)',
                       boxShadow: `
@@ -337,7 +337,7 @@ export function Services() {
           {/* Second Clothesline - Bottom Row */}
           <div className="relative" style={{ overflow: 'visible' }}>
             {/* Ultra-Realistic Rope - Full width from edge to edge */}
-            <div className="absolute top-8 left-0 right-0 h-4 rope-sway" style={{ animationDelay: '2s' }}>
+            <div className="absolute top-8 left-0 right-0 h-4 rope-sway hidden sm:block" style={{ animationDelay: '2s' }}>
               {/* Rope base with realistic hemp coloring */}
               <div className="w-full h-full bg-gradient-to-b from-yellow-800 via-amber-900 to-yellow-900 rounded-full shadow-lg" />
 
@@ -403,19 +403,19 @@ export function Services() {
             </div>
 
             {/* Heavy-duty wall anchor points */}
-            <div className="absolute left-0 sm:-left-10 top-4 w-10 h-10 bg-gradient-to-br from-gray-500 to-gray-800 rounded-full shadow-xl border border-gray-400">
+            <div className="absolute left-0 sm:-left-10 top-4 w-10 h-10 bg-gradient-to-br from-gray-500 to-gray-800 rounded-full shadow-xl border border-gray-400 hidden sm:block">
               <div className="absolute top-1.5 left-1.5 w-3 h-3 bg-gray-300 rounded-full opacity-80" />
               <div className="absolute bottom-1.5 right-1.5 w-1.5 h-1.5 bg-black/60 rounded-full" />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1 h-1 bg-gray-900 rounded-full" />
             </div>
-            <div className="absolute right-0 sm:-right-10 top-4 w-10 h-10 bg-gradient-to-br from-gray-500 to-gray-800 rounded-full shadow-xl border border-gray-400">
+            <div className="absolute right-0 sm:-right-10 top-4 w-10 h-10 bg-gradient-to-br from-gray-500 to-gray-800 rounded-full shadow-xl border border-gray-400 hidden sm:block">
               <div className="absolute top-1.5 left-1.5 w-3 h-3 bg-gray-300 rounded-full opacity-80" />
               <div className="absolute bottom-1.5 right-1.5 w-1.5 h-1.5 bg-black/60 rounded-full" />
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1 h-1 bg-gray-900 rounded-full" />
             </div>
 
             {/* Photos hanging from second line */}
-            <div className="flex flex-wrap justify-center gap-4 sm:gap-8 lg:gap-16 pt-20 max-w-7xl mx-auto px-4">
+            <div className="flex flex-wrap justify-center gap-6 sm:gap-8 lg:gap-16 pt-8 sm:pt-20 max-w-7xl mx-auto px-4 mt-8 sm:mt-0">
               {services.slice(3, 6).map((service, index) => (
                 <div
                   key={service.id}
@@ -430,7 +430,7 @@ export function Services() {
                   onMouseLeave={() => setHoveredPhoto(null)}
                 >
                   {/* Simple Realistic Wooden Clothespin */}
-                  <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-20">
+                  <div className="absolute -top-8 left-1/2 -translate-x-1/2 z-20 hidden sm:block">
                     {/* Clothespin body */}
                     <div className="relative w-5 h-10">
                       {/* Left wooden half */}
@@ -485,7 +485,7 @@ export function Services() {
                   </div>
 
                   {/* Photo - Same structure as above */}
-                  <div className="relative bg-white p-4 pb-8 shadow-2xl cursor-pointer w-[260px] sm:w-[280px] max-w-[90vw]"
+                  <div className="relative bg-white p-4 pb-8 shadow-2xl cursor-pointer w-full max-w-[300px] sm:w-[280px] sm:max-w-[90vw] mx-auto"
                     style={{
                       filter: hoveredPhoto === service.id ? 'brightness(1.1) contrast(1.05)' : 'brightness(1) contrast(0.95)',
                       boxShadow: `

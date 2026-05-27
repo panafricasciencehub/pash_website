@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from 'react'
 import { ImageWithFallback } from './figma/ImageWithFallback'
 import ceophoto from '../assets/team-member-1.png'
 import emmanuelphoto from '../assets/team-member-2.png'
@@ -8,6 +9,12 @@ import nabasophoto from '../assets/team-member-4.png'
 import jonnahphoto from '../assets/team-member-5.png.jpeg'
 
 export function Team() {
+  const [expandedProfiles, setExpandedProfiles] = useState<Record<string, boolean>>({})
+
+  const toggleProfile = (name: string) => {
+    setExpandedProfiles(prev => ({ ...prev, [name]: !prev[name] }))
+  }
+
   const wantedCriminals = [
     {
       name: "NAHABWAMUKAMA PIUS ",
@@ -249,8 +256,19 @@ export function Team() {
                             <div className="text-left space-y-2" style={{ fontFamily: 'serif' }}>
                               <div className="font-black text-lg text-black">{criminal.name}</div>
                               <div className="font-bold text-red-600 text-base">SPECIALIZATION: {criminal.specialization}</div>
-                              <div className="text-sm text-gray-800 leading-relaxed bg-gray-50/50 p-3 border-l-2 border-black">
-                                {criminal.description}
+                              <div className="text-sm text-gray-800 leading-relaxed bg-gray-50/50 p-3 border-l-2 border-black relative">
+                                <div className={`transition-all duration-300 ${expandedProfiles[criminal.name] ? '' : 'line-clamp-3 md:line-clamp-none'}`}>
+                                  {criminal.description}
+                                </div>
+                                <button 
+                                  onClick={(e) => {
+                                    e.preventDefault()
+                                    toggleProfile(criminal.name)
+                                  }}
+                                  className="md:hidden text-red-600 font-bold hover:underline mt-2 text-xs uppercase tracking-wider flex items-center gap-1"
+                                >
+                                  {expandedProfiles[criminal.name] ? 'Read Less' : 'Read More'}
+                                </button>
                               </div>
                             </div>
                           </div>
@@ -337,8 +355,19 @@ export function Team() {
                             <div className="text-left space-y-2" style={{ fontFamily: 'serif' }}>
                               <div className="font-black text-lg text-black">{criminal.name}</div>
                               <div className="font-bold text-red-600 text-base">SPECIALIZATION: {criminal.specialization}</div>
-                              <div className="text-sm text-gray-800 leading-relaxed bg-gray-50/50 p-3 border-l-2 border-black">
-                                {criminal.description}
+                              <div className="text-sm text-gray-800 leading-relaxed bg-gray-50/50 p-3 border-l-2 border-black relative">
+                                <div className={`transition-all duration-300 ${expandedProfiles[criminal.name] ? '' : 'line-clamp-3 md:line-clamp-none'}`}>
+                                  {criminal.description}
+                                </div>
+                                <button 
+                                  onClick={(e) => {
+                                    e.preventDefault()
+                                    toggleProfile(criminal.name)
+                                  }}
+                                  className="md:hidden text-red-600 font-bold hover:underline mt-2 text-xs uppercase tracking-wider flex items-center gap-1"
+                                >
+                                  {expandedProfiles[criminal.name] ? 'Read Less' : 'Read More'}
+                                </button>
                               </div>
                             </div>
                           </div>
