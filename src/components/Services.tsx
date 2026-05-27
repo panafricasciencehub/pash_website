@@ -191,7 +191,7 @@ export function Services() {
             </div>
 
             {/* Photos hanging from first line */}
-            <div className="flex flex-wrap justify-center gap-6 sm:gap-8 lg:gap-16 pt-8 sm:pt-20 max-w-7xl mx-auto px-4">
+            <div className="flex flex-wrap justify-center gap-12 sm:gap-8 lg:gap-16 pt-8 sm:pt-20 max-w-7xl mx-auto px-4">
               {services.slice(0, 3).map((service, index) => (
                 <div
                   key={service.id}
@@ -271,7 +271,7 @@ export function Services() {
                     }}>
 
                     {/* Photo Area */}
-                    <div className="h-48 mb-6 rounded-sm relative group">
+                    <div className="h-48 mb-6 rounded-sm relative group overflow-hidden">
                       {service.link ? (
                         <a href={service.link} target="_blank" rel="noopener noreferrer" className="block w-full h-full relative cursor-pointer">
                           <ImageWithFallback
@@ -415,7 +415,7 @@ export function Services() {
             </div>
 
             {/* Photos hanging from second line */}
-            <div className="flex flex-wrap justify-center gap-6 sm:gap-8 lg:gap-16 pt-8 sm:pt-20 max-w-7xl mx-auto px-4 mt-8 sm:mt-0">
+            <div className="flex flex-wrap justify-center gap-12 sm:gap-8 lg:gap-16 pt-8 sm:pt-20 max-w-7xl mx-auto px-4 mt-8 sm:mt-0">
               {services.slice(3, 6).map((service, index) => (
                 <div
                   key={service.id}
@@ -495,7 +495,7 @@ export function Services() {
                          `
                     }}>
 
-                    <div className="h-48 mb-6 rounded-sm relative group">
+                    <div className="h-48 mb-6 rounded-sm relative group overflow-hidden">
                       {service.link ? (
                         <a href={service.link} target="_blank" rel="noopener noreferrer" className="block w-full h-full relative cursor-pointer">
                           <ImageWithFallback
