@@ -257,7 +257,12 @@ export function Team() {
                               <div className="font-black text-lg text-black">{criminal.name}</div>
                               <div className="font-bold text-red-600 text-base">SPECIALIZATION: {criminal.specialization}</div>
                               <div className="text-sm text-gray-800 leading-relaxed bg-gray-50/50 p-3 border-l-2 border-black relative">
-                                <div className={`transition-all duration-300 ${expandedProfiles[criminal.name] ? '' : 'line-clamp-3 md:line-clamp-none'}`}>
+                                <div className="md:hidden">
+                                  {expandedProfiles[criminal.name] 
+                                    ? criminal.description 
+                                    : `${criminal.description.substring(0, 100)}...`}
+                                </div>
+                                <div className="hidden md:block">
                                   {criminal.description}
                                 </div>
                                 <button 
@@ -265,7 +270,7 @@ export function Team() {
                                     e.preventDefault()
                                     toggleProfile(criminal.name)
                                   }}
-                                  className="md:hidden text-red-600 font-bold hover:underline mt-2 text-xs uppercase tracking-wider flex items-center gap-1"
+                                  className="md:hidden text-red-600 font-bold hover:underline mt-2 text-xs uppercase tracking-wider inline-block"
                                 >
                                   {expandedProfiles[criminal.name] ? 'Read Less' : 'Read More'}
                                 </button>
@@ -356,7 +361,12 @@ export function Team() {
                               <div className="font-black text-lg text-black">{criminal.name}</div>
                               <div className="font-bold text-red-600 text-base">SPECIALIZATION: {criminal.specialization}</div>
                               <div className="text-sm text-gray-800 leading-relaxed bg-gray-50/50 p-3 border-l-2 border-black relative">
-                                <div className={`transition-all duration-300 ${expandedProfiles[criminal.name] ? '' : 'line-clamp-3 md:line-clamp-none'}`}>
+                                <div className="md:hidden">
+                                  {expandedProfiles[criminal.name] 
+                                    ? criminal.description 
+                                    : `${criminal.description.substring(0, 100)}...`}
+                                </div>
+                                <div className="hidden md:block">
                                   {criminal.description}
                                 </div>
                                 <button 
@@ -364,7 +374,7 @@ export function Team() {
                                     e.preventDefault()
                                     toggleProfile(criminal.name)
                                   }}
-                                  className="md:hidden text-red-600 font-bold hover:underline mt-2 text-xs uppercase tracking-wider flex items-center gap-1"
+                                  className="md:hidden text-red-600 font-bold hover:underline mt-2 text-xs uppercase tracking-wider inline-block"
                                 >
                                   {expandedProfiles[criminal.name] ? 'Read Less' : 'Read More'}
                                 </button>
