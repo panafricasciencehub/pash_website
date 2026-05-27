@@ -95,12 +95,12 @@ export function Services() {
             <div className="w-3 h-3 bg-amber-500 rounded-full animate-pulse" />
           </div>
 
-          <h2 className={`text-5xl sm:text-6xl lg:text-7xl font-black leading-tight mb-6 text-amber-100 transform transition-all duration-1000 delay-200 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
+          <h2 className={`text-4xl sm:text-5xl lg:text-7xl font-black leading-tight mb-6 text-amber-100 transform transition-all duration-1000 delay-200 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
             }`}>
             Pash learning hub
           </h2>
 
-          <p className={`text-xl text-amber-200/90 leading-relaxed max-w-3xl mx-auto transform transition-all duration-1000 delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
+          <p className={`text-lg sm:text-xl text-amber-200/90 leading-relaxed max-w-3xl mx-auto transform transition-all duration-1000 delay-400 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'
             }`}>
             OPEN LEARNING with WORLD CLASS UNIVERSITIES
           </p>
@@ -311,7 +311,7 @@ export function Services() {
 
                     {/* Text */}
                     <div className="relative">
-                      <h3 className="font-black text-lg text-gray-800 mb-3 leading-tight">
+                      <h3 className="font-black text-base sm:text-lg text-gray-800 mb-3 leading-tight">
                         {service.title}
                       </h3>
 
@@ -530,7 +530,7 @@ export function Services() {
                     </div>
 
                     <div className="relative">
-                      <h3 className="font-black text-lg text-gray-800 mb-3 leading-tight">
+                      <h3 className="font-black text-base sm:text-lg text-gray-800 mb-3 leading-tight">
                         {service.title}
                       </h3>
 

@@ -107,7 +107,7 @@ export function Portfolio() {
               <div className="w-3 h-3 bg-accent-blue rounded-full animate-pulse" />
             </div>
 
-            <h2 className="text-5xl sm:text-6xl font-black leading-tight">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight">
               <span className="block">Ongoing Projects</span>
             </h2>
           </div>
@@ -153,7 +153,7 @@ export function Portfolio() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                 />
 
                 {/* Floating Badge */}
@@ -175,11 +175,11 @@ export function Portfolio() {
                   </span>
                 </div>
 
-                <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-4">
                   {project.title}
                 </h3>
 
-                <p className="text-base lg:text-lg text-gray-600 leading-relaxed max-w-3xl">
+                <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed max-w-3xl">
                   {project.description}
                 </p>
               </div>

@@ -4,7 +4,6 @@ import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
 import { useState, useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import africaBg from '../assets/africa-bg.png'
 import iconImg from '../assets/ICON.jpeg'
 
 export function Hero() {
@@ -57,12 +56,16 @@ export function Hero() {
 
   return (
     <div className="relative h-screen w-full overflow-hidden bg-black">
-      {/* MASSIVE BACKGROUND IMAGE */}
-      <img
-        src={africaBg}
-        alt="Africa Landscape"
-        className="absolute inset-0 w-full h-full object-cover scale-110"
-      />
+      {/* MASSIVE BACKGROUND VIDEO */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover object-center sm:object-top scale-110 opacity-70"
+      >
+        <source src="/PASH.mp4" type="video/mp4" />
+      </video>
 
       {/* Full-Width Navbar */}
       <motion.nav

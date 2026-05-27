@@ -61,7 +61,7 @@ export function About() {
             </span>
           </div>
 
-          <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-tight mb-8 text-gray-900">
+          <h2 className="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight mb-8 text-gray-900">
             Who We Are
           </h2>
 
@@ -77,8 +77,8 @@ export function About() {
             <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-8">
               <Target className="w-8 h-8 text-blue-600" />
             </div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h3>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Our Mission</h3>
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
               To promote science education, research culture, and innovation among Africans by providing accessible platforms for learning, collaboration, mentorship, and scientific leadership.
             </p>
           </div>
@@ -88,8 +88,8 @@ export function About() {
             <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mb-8">
               <Eye className="w-8 h-8 text-purple-600" />
             </div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Vision</h3>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Our Vision</h3>
+            <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
               To empower scientists and transform Africa into a global hub of research and innovation, reducing dependence on imported technologies while addressing critical issues like health crises, food insecurity, and climate change through homegrown solutions.
             </p>
           </div>

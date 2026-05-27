@@ -14,7 +14,7 @@ export function Team() {
       specialization: "Microbiologist & CEO",
       description: "Nahabwamukama Pius is a Ugandan microbiologist and science leader, science advocate. He founded and leads the Pan African Science Hub (PASH) as CEO. He holds certificates in Gujarat State training programs, poster presentation awards, and academic participations while advancing outreach, webinars, innovation, and youth empowerment across Africa ",
       image: ceophoto,
-      rotation: 'rotate-3',
+      rotation: 'sm:rotate-3',
       mustacheStyle: "artistic"
     },
     {
@@ -22,7 +22,7 @@ export function Team() {
       specialization: "Social Scientist & Director of Partnerships",
       description: "Emmanuel is a Ugandan social scientist and PhD Research Scholar dedicated to advancing global Sustainable Development Goals. With extensive research experience across India, Uganda, and Bangladesh, he drives PASH's strategic collaborations by championing gender equality, youth inclusion, and community-driven health systems.",
       image: emmanuelphoto,
-      rotation: 'rotate-2',
+      rotation: 'sm:rotate-2',
       mustacheStyle: "handlebar"
     },
     {
@@ -30,7 +30,7 @@ export function Team() {
       specialization: "Pharmacologist & Director of Education",
       description: "Ronald is a Ugandan pharmacist and published researcher leading PASH's education and training initiatives. Specializing in drug discovery through computational tools and clinical models, he is dedicated to advancing pharmaceutical innovation while inspiring and equipping the next generation of African scientists.",
       image: ronaladphoto,
-      rotation: 'rotate-2',
+      rotation: 'sm:rotate-2',
       mustacheStyle: "thick"
     },
     {
@@ -38,7 +38,7 @@ export function Team() {
       specialization: "Biotechnologist & Chief Operations Officer",
       description: "Samson is a biotechnology researcher and dynamic youth leader driving PASH’s daily operations. An active advocate for climate conservation and gender equity, he merges his scientific focus on immunology and virology with a deep passion for creating lasting, sustainable impact across Africa.",
       image: nabasophoto,
-      rotation: '-rotate-2',
+      rotation: 'sm:-rotate-2',
       mustacheStyle: "curly"
     },
     {
@@ -46,7 +46,7 @@ export function Team() {
       specialization: "country director Uganda",
       description: "A Medical Laboratory Scientist with a strong interest in immunology, microbiology, molecular diagnostics, and clinical research. I am passionate about applying laboratory science to improve disease diagnosis, patient care, and public health outcomes. I am committed to continuous learning, scientific excellence, and professional growth in the healthcare field.",
       image: jonnahphoto,
-      rotation: '-rotate-2',
+      rotation: 'sm:-rotate-2',
       mustacheStyle: "curly"
     }
   ]
@@ -102,12 +102,12 @@ export function Team() {
             <div className="w-3 h-3 bg-accent-blue rounded-full animate-pulse" />
           </div>
 
-          <h2 className="text-5xl sm:text-6xl lg:text-7xl font-black leading-tight mb-8 text-foreground">
+          <h2 className="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight mb-8 text-foreground">
             <span className="block mb-2">Leading the Scientific</span>
             <span className="block text-foreground">Frontier</span>
           </h2>
 
-          <p className="text-2xl lg:text-3xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
             Brilliant minds dedicated to advancing STEM across the continent.
           </p>
         </div>
@@ -212,7 +212,7 @@ export function Team() {
 
                             {/* INNOVATOR Header */}
                             <div className="mb-4">
-                              <h3 className="text-3xl font-black text-black mb-2"
+                              <h3 className="text-2xl sm:text-3xl font-black text-black mb-2"
                                 style={{
                                   fontFamily: 'serif',
                                   letterSpacing: '0.1em'
@@ -300,7 +300,7 @@ export function Team() {
 
                             {/* INNOVATOR Header */}
                             <div className="mb-4">
-                              <h3 className="text-3xl font-black text-black mb-2"
+                              <h3 className="text-2xl sm:text-3xl font-black text-black mb-2"
                                 style={{
                                   fontFamily: 'serif',
                                   letterSpacing: '0.1em'
