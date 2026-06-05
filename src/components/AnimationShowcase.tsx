@@ -6,7 +6,7 @@ const AnimationShowcase = () => {
       {/* Float Gentle */}
       <Card className="p-6 subtle-shadow">
         <div className="float-gentle">
-          <div 
+          <div
             className="w-16 h-16 rounded-lg mx-auto mb-4"
             style={{ backgroundColor: 'var(--accent-blue)' }}
           ></div>
@@ -18,7 +18,7 @@ const AnimationShowcase = () => {
       {/* Drift Left */}
       <Card className="p-6 subtle-shadow">
         <div className="drift-left">
-          <div 
+          <div
             className="w-16 h-16 rounded-lg mx-auto mb-4"
             style={{ backgroundColor: 'var(--accent-emerald)' }}
           ></div>
@@ -30,7 +30,7 @@ const AnimationShowcase = () => {
       {/* Drift Right */}
       <Card className="p-6 subtle-shadow">
         <div className="drift-right">
-          <div 
+          <div
             className="w-16 h-16 rounded-lg mx-auto mb-4"
             style={{ backgroundColor: 'var(--accent-purple)' }}
           ></div>
@@ -42,7 +42,7 @@ const AnimationShowcase = () => {
       {/* Photo Sway 1 */}
       <Card className="p-6 subtle-shadow">
         <div className="photo-sway-1">
-          <div 
+          <div
             className="w-16 h-20 rounded-lg mx-auto mb-4"
             style={{ backgroundColor: 'var(--accent-blue)' }}
           ></div>
@@ -54,7 +54,7 @@ const AnimationShowcase = () => {
       {/* Pulse Glow */}
       <Card className="p-6 subtle-shadow">
         <div className="pulse-glow">
-          <div 
+          <div
             className="w-16 h-16 rounded-full mx-auto mb-4"
             style={{ backgroundColor: 'var(--accent-emerald)' }}
           ></div>
@@ -65,7 +65,7 @@ const AnimationShowcase = () => {
 
       {/* Gentle Animation */}
       <Card className="p-6 subtle-shadow gentle-animation hover:elevated-shadow">
-        <div 
+        <div
           className="w-16 h-16 rounded-lg mx-auto mb-4"
           style={{ backgroundColor: 'var(--accent-purple)' }}
         ></div>
