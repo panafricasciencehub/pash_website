@@ -2,6 +2,7 @@ import partner1Img from '../assets/partent1.jpeg'
 import partner2Img from '../assets/partent2.jpeg'
 import partner3Img from '../assets/partent3.jpeg'
 import partner4Img from '../assets/partent4.jpeg'
+import partner5Img from '../assets/partent5.jpeg'
 
 const partners = [
   {
@@ -27,6 +28,12 @@ const partners = [
     title: "Grittrix",
     image: partner4Img,
     description: "Grittrix is an AI-powered innovation company founded in 2025. It develops custom software, web/apps, and intelligent solutions to transform industries like healthcare, retail, and agriculture with accessible technology."
+  },
+  {
+    id: 5,
+    title: "Lira University",
+    image: partner5Img,
+    description: "Lira University is a young public university located in Lira, northern Uganda. Established in 2015, it specialises in health sciences, technology, applied education, and community-driven research as \"The Beacon\" for regional development."
   }
 ];
 

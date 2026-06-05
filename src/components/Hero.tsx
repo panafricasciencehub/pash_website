@@ -113,12 +113,12 @@ export function Hero() {
               >
                 Pash learning hub
               </a>
-              <a
+              {/* <a
                 href="#team"
                 className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
               >
                 Team
-              </a>
+              </a> */}
               <a
                 href="#contact"
                 className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
@@ -218,13 +218,13 @@ export function Hero() {
               >
                 Pash learning hub
               </a>
-              <a
+              {/* <a
                 href="#team"
                 className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Team
-              </a>
+              </a> */}
               <a
                 href="#contact"
                 className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
