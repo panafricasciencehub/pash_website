@@ -64,6 +64,8 @@ export default function Admin() {
   const [form, setForm] = useState(emptyForm);
   const [tab, setTab] = useState<"edit" | "preview">("edit");
   const [submitting, setSubmitting] = useState(false);
+  const [imageSource, setImageSource] = useState<"url" | "upload">("url");
+  const [uploadingImage, setUploadingImage] = useState(false);
 
   useEffect(() => {
     if (sessionStorage.getItem(STORAGE_KEY) === "1") setAuthed(true);
@@ -135,6 +137,33 @@ export default function Admin() {
     });
     setShowForm(true);
     setTab("edit");
+    setImageSource("url");
+  }
+
+  async function handleImageUpload(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setUploadingImage(true);
+    const fileExt = file.name.split('.').pop();
+    const fileName = `${Math.random().toString(36).substring(2)}-${Date.now()}.${fileExt}`;
+    const filePath = `${fileName}`;
+
+    const { error: uploadError } = await supabase.storage
+      .from('images')
+      .upload(filePath, file);
+
+    if (uploadError) {
+      toast({ title: "Error uploading image", description: uploadError.message, variant: "destructive" });
+      setUploadingImage(false);
+      return;
+    }
+
+    const { data: publicUrlData } = supabase.storage.from('images').getPublicUrl(filePath);
+    
+    setForm({ ...form, image_url: publicUrlData.publicUrl });
+    setUploadingImage(false);
+    toast({ title: "Image uploaded successfully!" });
   }
 
   async function handleSubmit(e: FormEvent) {
@@ -381,14 +410,53 @@ export default function Admin() {
               </select>
             </Field>
 
-            <Field label="Image URL" required>
-              <input
-                type="url"
-                value={form.image_url}
-                onChange={(e) => setForm({ ...form, image_url: e.target.value })}
-                placeholder="https://example.com/image.jpg"
-                className="form-input"
-              />
+            <Field label="Image Source" required>
+              <div className="flex gap-4 mb-3">
+                <label className="flex items-center gap-2 cursor-pointer">
+                  <input
+                    type="radio"
+                    checked={imageSource === "url"}
+                    onChange={() => setImageSource("url")}
+                    className="w-4 h-4 text-accent-blue bg-background border-border"
+                  />
+                  <span className="text-sm font-semibold">Image URL</span>
+                </label>
+                <label className="flex items-center gap-2 cursor-pointer">
+                  <input
+                    type="radio"
+                    checked={imageSource === "upload"}
+                    onChange={() => setImageSource("upload")}
+                    className="w-4 h-4 text-accent-blue bg-background border-border"
+                  />
+                  <span className="text-sm font-semibold">Upload File</span>
+                </label>
+              </div>
+
+              {imageSource === "url" ? (
+                <input
+                  type="url"
+                  value={form.image_url}
+                  onChange={(e) => setForm({ ...form, image_url: e.target.value })}
+                  placeholder="https://example.com/image.jpg"
+                  className="form-input"
+                />
+              ) : (
+                <div className="space-y-3">
+                  <input
+                    type="file"
+                    accept="image/*"
+                    onChange={handleImageUpload}
+                    disabled={uploadingImage}
+                    className="form-input file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-foreground file:text-background hover:file:opacity-90 cursor-pointer"
+                  />
+                  {uploadingImage && <p className="text-sm text-accent-blue animate-pulse font-semibold">Uploading image...</p>}
+                  {form.image_url && !uploadingImage && imageSource === "upload" && (
+                    <p className="text-sm text-accent-emerald font-semibold break-all">
+                      ✓ Uploaded successfully!
+                    </p>
+                  )}
+                </div>
+              )}
             </Field>
 
             <Field
