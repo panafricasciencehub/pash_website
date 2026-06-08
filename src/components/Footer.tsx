@@ -15,9 +15,10 @@ export function Footer() {
               <div className="font-montserrat text-background text-3xl tracking-wider mb-4">
                 pash
               </div>
-              <p className="text-background/70 leading-relaxed mb-6">
-                Pan African Science Hub is a technology-driven organization.
-              </p>
+              <div className="text-background/70 leading-relaxed mb-6">
+                <p>Pan African Science Hub.</p>
+                <p className="mt-2">Follow us on our social media:</p>
+              </div>
               {/* Social Media Icons */}
               <div className="flex items-center space-x-6">
                 {/* Facebook */}
