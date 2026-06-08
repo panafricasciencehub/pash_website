@@ -7,7 +7,7 @@ import { useToast } from "@/hooks/use-toast";
 const ADMIN_PASSWORD = "K9mP2xQ7nR4tW8vL3yJ6sB1dF5hG0aZc";
 const STORAGE_KEY = "pash_admin_authed";
 
-const CATEGORIES = ["Behind the Scenes", "Industry Insights", "Production", "Team", "Tutorials", "News"];
+const CATEGORIES = ["Behind the Scenes", "Science and Innovation", "Team", "Tutorials", "News"];
 
 const TEMPLATE = `<h1>Main Heading</h1>
 <p>Regular paragraph with <strong>bold</strong> and <em>italic</em> text.</p>
@@ -160,7 +160,7 @@ export default function Admin() {
     }
 
     const { data: publicUrlData } = supabase.storage.from('images').getPublicUrl(filePath);
-    
+
     setForm({ ...form, image_url: publicUrlData.publicUrl });
     setUploadingImage(false);
     toast({ title: "Image uploaded successfully!" });
@@ -263,13 +263,13 @@ export default function Admin() {
 
       <div className="container mx-auto px-6 py-10">
         <div className="flex gap-8 mb-8 border-b border-border pb-4">
-          <button 
+          <button
             onClick={() => { setViewTab("articles"); setShowForm(false); }}
             className={`font-black text-xl transition-colors ${viewTab === "articles" ? "text-foreground" : "text-muted-foreground hover:text-foreground/80"}`}
           >
             Articles
           </button>
-          <button 
+          <button
             onClick={() => { setViewTab("messages"); setShowForm(false); }}
             className={`font-black text-xl transition-colors flex items-center gap-2 ${viewTab === "messages" ? "text-foreground" : "text-muted-foreground hover:text-foreground/80"}`}
           >
