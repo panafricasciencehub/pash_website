@@ -110,6 +110,12 @@ export function Footer() {
             </div>
             <div className="text-sm text-background/70">
               Kampala, Uganda / Bhavanagar, Gujarat, India
+              <div>
+                """
+                Mobile: +256 788 808 823(Uganda) , +91 8401504238(India)
+                Email: panafricansciencehuboffice@gmail.com
+                """
+              </div>
             </div>
           </div>
         </div>
