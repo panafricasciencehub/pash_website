@@ -6,6 +6,8 @@ import emmanuelphoto from '../assets/team-member-2.png'
 import ronaladphoto from '../assets/team-member-3.png'
 import nabasophoto from '../assets/team-member-4.png'
 import jonnahphoto from '../assets/team-member-5.png.jpeg'
+import mariaphoto from '../assets/team-member-6.png'
+import dariosphoto from '../assets/team-member-7.png'
 
 export function Team() {
   const teamMembers = [
@@ -13,47 +15,47 @@ export function Team() {
       name: "NAHABWAMUKAMA PIUS",
       role: "Microbiologist & CEO",
       image: ceophoto,
-      articleLink: "#", // Replace with actual article link
+      articleLink: "https://www.panafricansciencehub.com/articles/982ed9d6-536b-4bfc-a2d1-b82447bdda0b", // Replace with actual article link
     },
     {
       name: "ISINDE EMMANUEL",
       role: "Social Scientist & Director of Partnerships",
       image: emmanuelphoto,
-      articleLink: "#", // Replace with actual article link
+      articleLink: "https://www.panafricansciencehub.com/articles/5f7c15e9-7861-4b37-9ed7-ad31d52c8554", // Replace with actual article link
     },
     {
       name: "SSEKIKUBO RONALD",
       role: "Pharmacologist & Director of Education",
       image: ronaladphoto,
-      articleLink: "#", // Replace with actual article link
+      articleLink: "https://www.panafricansciencehub.com/articles/e2d0252f-1c93-4dce-9a06-a21e5e1a2c64", // Replace with actual article link
     },
     {
       name: "SAMSON NABASA",
       role: "Biotechnologist & Chief Operations Officer",
       image: nabasophoto,
-      articleLink: "#", // Replace with actual article link
+      articleLink: "https://www.panafricansciencehub.com/articles/ac74ea4a-8735-4e1e-b64d-df8d9d9e9fc4", // Replace with actual article link
     },
     {
       name: "AGABA JONNAH",
       role: "Country Director Uganda",
       image: jonnahphoto,
-      articleLink: "#", // Replace with actual article link
+      articleLink: "https://www.panafricansciencehub.com/articles/7affc86d-30db-4efd-ab95-41b476e2dbcb", // Replace with actual article link
     },
     // Placeholders for remaining members
     {
       name: "MARIA VALERIA KOBUSINGE",
       role: "Coordinator of Youth Education and Outreach",
-      image: ceophoto,
-      articleLink: "#",
+      image: mariaphoto,
+      articleLink: "https://www.panafricansciencehub.com/articles/fed389a5-8d14-4c36-9249-411c92e20d4c",
     },
     {
       name: "OKWE DARIOUS",
       role: "Chief University Representative",
-      image: ceophoto,
-      articleLink: "#",
+      image: dariosphoto,
+      articleLink: "https://www.panafricansciencehub.com/articles/1c14a676-8e1b-454e-91c8-d0d9515e32b3",
     },
     {
-      name: "Team Member 8",
+      name: "Mohith Maddala",
       role: "Role Description",
       image: ceophoto,
       articleLink: "#",
@@ -86,7 +88,7 @@ export function Team() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
-              <a 
+              <a
                 href={member.articleLink}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -101,7 +103,7 @@ export function Team() {
                     className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
-                
+
                 {/* Info */}
                 <div className="p-5 text-center flex-1 flex flex-col justify-center bg-white dark:bg-gray-900 border-t border-border">
                   <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-1">
