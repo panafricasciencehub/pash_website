@@ -1,8 +1,8 @@
-import partner1Img from '../assets/partent1.jpeg'
-import partner2Img from '../assets/partent2.jpeg'
-import partner3Img from '../assets/partent3.jpeg'
-import partner4Img from '../assets/partent4.jpeg'
-import partner5Img from '../assets/partent5.jpeg'
+import partner1Img from '../assets/partner1.jpeg'
+import partner2Img from '../assets/partner2.jpeg'
+import partner3Img from '../assets/partner3.jpeg'
+import partner4Img from '../assets/partner4.jpeg'
+import partner5Img from '../assets/partner5.jpeg'
 
 const partners = [
   {

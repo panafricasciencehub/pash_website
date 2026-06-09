@@ -57,7 +57,7 @@ export function Team() {
     },
     {
       name: "Mohith Maddala",
-      role: "Role Description",
+      role: "Web Developer",
       image: mohithphoto,
       articleLink: "#",
     }

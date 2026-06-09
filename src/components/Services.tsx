@@ -18,7 +18,7 @@ export function Services() {
       link: 'https://ocw.mit.edu/'
     },
     {
-      id: 'standford',
+      id: 'stanford',
       title: "Stanford Open Learning",
       description: "Free courses and recorded lectures in AI, machine learning, and engineering through Stanford Online.",
       color: 'accent-blue',
@@ -36,7 +36,7 @@ export function Services() {
       link: 'https://oyc.yale.edu/'
     },
     {
-      id: 'berkely',
+      id: 'berkeley',
       title: "University of California, Berkeley",
       description: "Access world-class resources from this prestigious public university, known for its top-tier engineering and business programs.",
       color: 'accent-blue',
@@ -45,7 +45,7 @@ export function Services() {
       link: 'https://academicearth.org/universities/berkeley/'
     },
     {
-      id: 'acadmicearth',
+      id: 'academicearth',
       title: "Academic Earth Platform",
       description: "Explore elite academic content through a single curated platform that brings free lectures from the world's best universities directly to you.",
       color: 'accent-blue',

@@ -110,7 +110,7 @@ export function Footer() {
               <a href="/articles" className="hover:text-background transition">Articles</a>
             </div>
             <div className="text-sm text-background/70 text-center md:text-right">
-              <div>Kampala, Uganda / Bhavanagar, Gujarat, India</div>
+              <div>Kampala, Uganda / Bhavnagar, Gujarat, India</div>
               <div>Mobile: +256 788 808 823(Uganda) , +91 8401504238(India)</div>
               <div>Email: panafricansciencehuboffice@gmail.com</div>
             </div>
