@@ -3,7 +3,7 @@ import { Partners } from './components/Partners'
 import { Portfolio } from './components/Portfolio'
 import { About } from './components/About'
 import { Services } from './components/Services'
-// import { Team } from './components/Team'
+import { Team } from './components/Team'
 import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 
@@ -26,9 +26,9 @@ export default function App() {
         <section id="services" aria-label="Services section">
           <Services />
         </section>
-        {/* <section id="team" aria-label="Team section" style={{ overflow: 'visible', height: 'auto', minHeight: '0', maxHeight: 'none' }}>
+        <section id="team" aria-label="Team section">
           <Team />
-        </section> */}
+        </section>
         <section id="contact" aria-label="Contact section">
           <Contact />
         </section>
