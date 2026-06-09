@@ -80,28 +80,25 @@ export function Team() {
             {teamMembers.map((member, index) => (
               <div 
                 key={index}
-                className="group relative rounded-2xl overflow-hidden bg-card shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-border"
+                className="group relative rounded-2xl overflow-hidden bg-card shadow-sm hover:shadow-xl transition-all duration-300 border border-border flex flex-col"
               >
                 {/* Photo Container */}
                 <div className="relative aspect-[4/5] w-full overflow-hidden bg-muted">
                   <ImageWithFallback
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-110"
+                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
                   />
-                  
-                  {/* Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent opacity-80 transition-opacity duration-300" />
-                  
-                  {/* Info */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-                    <h3 className="text-xl font-bold text-white mb-1 drop-shadow-md">
-                      {member.name}
-                    </h3>
-                    <p className="text-sm font-medium text-blue-300 drop-shadow-md uppercase tracking-wide">
-                      {member.role}
-                    </p>
-                  </div>
+                </div>
+                
+                {/* Info */}
+                <div className="p-5 text-center flex-1 flex flex-col justify-center bg-white dark:bg-gray-900 border-t border-border">
+                  <h3 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-1">
+                    {member.name}
+                  </h3>
+                  <p className="text-xs sm:text-sm font-medium text-blue-600 dark:text-blue-400 uppercase tracking-wide">
+                    {member.role}
+                  </p>
                 </div>
               </div>
             ))}
