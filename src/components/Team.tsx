@@ -6,8 +6,8 @@ import emmanuelphoto from '../assets/team-member-2.png'
 import ronaladphoto from '../assets/team-member-3.png'
 import nabasophoto from '../assets/team-member-4.png'
 import jonnahphoto from '../assets/team-member-5.png.jpeg'
-import mariaphoto from '../assets/team-member-7.jpeg'
-import dariosphoto from '../assets/team-member-8.jpeg'
+import mariaphoto from '../assets/team-member-6.jpeg'
+import dariosphoto from '../assets/team-member-7.jpeg'
 
 export function Team() {
   const teamMembers = [
