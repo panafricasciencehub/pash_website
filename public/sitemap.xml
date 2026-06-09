@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
+  <url>
+    <loc>https://www.panafricansciencehub.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.panafricansciencehub.com/articles</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Articles added for team members -->
+  <url>
+    <loc>https://www.panafricansciencehub.com/articles/982ed9d6-536b-4bfc-a2d1-b82447bdda0b</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.panafricansciencehub.com/articles/5f7c15e9-7861-4b37-9ed7-ad31d52c8554</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.panafricansciencehub.com/articles/e2d0252f-1c93-4dce-9a06-a21e5e1a2c64</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.panafricansciencehub.com/articles/ac74ea4a-8735-4e1e-b64d-df8d9d9e9fc4</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.panafricansciencehub.com/articles/7affc86d-30db-4efd-ab95-41b476e2dbcb</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.panafricansciencehub.com/articles/fed389a5-8d14-4c36-9249-411c92e20d4c</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.panafricansciencehub.com/articles/1c14a676-8e1b-454e-91c8-d0d9515e32b3</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+</urlset>
