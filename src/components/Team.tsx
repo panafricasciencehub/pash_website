@@ -41,14 +41,14 @@ export function Team() {
     },
     // Placeholders for remaining members
     {
-      name: "Team Member 6",
-      role: "Role Description",
+      name: "MARIA VALERIA KOBUSINGE",
+      role: "Coordinator of Youth Education and Outreach",
       image: ceophoto,
       articleLink: "#",
     },
     {
-      name: "Team Member 7",
-      role: "Role Description",
+      name: "OKWE DARIOUS",
+      role: "Chief University Representative",
       image: ceophoto,
       articleLink: "#",
     },
