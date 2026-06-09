@@ -13,42 +13,50 @@ export function Team() {
       name: "NAHABWAMUKAMA PIUS",
       role: "Microbiologist & CEO",
       image: ceophoto,
+      articleLink: "#", // Replace with actual article link
     },
     {
       name: "ISINDE EMMANUEL",
       role: "Social Scientist & Director of Partnerships",
       image: emmanuelphoto,
+      articleLink: "#", // Replace with actual article link
     },
     {
       name: "SSEKIKUBO RONALD",
       role: "Pharmacologist & Director of Education",
       image: ronaladphoto,
+      articleLink: "#", // Replace with actual article link
     },
     {
       name: "SAMSON NABASA",
       role: "Biotechnologist & Chief Operations Officer",
       image: nabasophoto,
+      articleLink: "#", // Replace with actual article link
     },
     {
       name: "AGABA JONNAH",
       role: "Country Director Uganda",
       image: jonnahphoto,
+      articleLink: "#", // Replace with actual article link
     },
     // Placeholders for remaining members
     {
       name: "Team Member 6",
       role: "Role Description",
-      image: ceophoto, // Placeholder image
+      image: ceophoto,
+      articleLink: "#",
     },
     {
       name: "Team Member 7",
       role: "Role Description",
-      image: ceophoto, // Placeholder image
+      image: ceophoto,
+      articleLink: "#",
     },
     {
       name: "Team Member 8",
       role: "Role Description",
-      image: ceophoto, // Placeholder image
+      image: ceophoto,
+      articleLink: "#",
     }
   ]
 
@@ -78,9 +86,12 @@ export function Team() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (
-              <div 
+              <a 
+                href={member.articleLink}
+                target="_blank"
+                rel="noopener noreferrer"
                 key={index}
-                className="group relative rounded-2xl overflow-hidden bg-card shadow-sm hover:shadow-xl transition-all duration-300 border border-border flex flex-col"
+                className="group relative rounded-2xl overflow-hidden bg-card shadow-sm hover:shadow-xl transition-all duration-300 border border-border flex flex-col block cursor-pointer"
               >
                 {/* Photo Container */}
                 <div className="relative aspect-[4/5] w-full overflow-hidden bg-muted">
@@ -100,7 +111,7 @@ export function Team() {
                     {member.role}
                   </p>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
