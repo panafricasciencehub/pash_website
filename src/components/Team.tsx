@@ -8,6 +8,7 @@ import nabasophoto from '../assets/team-member-4.png'
 import jonnahphoto from '../assets/team-member-5.png.jpeg'
 import mariaphoto from '../assets/team-member-6.jpeg'
 import dariosphoto from '../assets/team-member-7.jpeg'
+import mohithphoto from '../assets/team-member-8.jpeg'
 
 export function Team() {
   const teamMembers = [
@@ -57,7 +58,7 @@ export function Team() {
     {
       name: "Mohith Maddala",
       role: "Role Description",
-      image: ceophoto,
+      image: mohithphoto,
       articleLink: "#",
     }
   ]
