@@ -106,7 +106,7 @@ export function Footer() {
         <div className="border-t border-background/20 pt-8 mt-16">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-sm text-background/70 mb-4 md:mb-0 flex items-center gap-4">
-              <span>© 2025 pash. All rights reserved.</span>
+              <span>© 2026 pash. All rights reserved.</span>
               <a href="/articles" className="hover:text-background transition">Articles</a>
             </div>
             <div className="text-sm text-background/70 text-center md:text-right">
