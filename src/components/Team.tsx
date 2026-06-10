@@ -5,10 +5,10 @@ import ceophoto from '../assets/team-member-1.png'
 import emmanuelphoto from '../assets/team-member-2.png'
 import seraphoto from '../assets/team-member-3.jpeg'
 import ronaladphoto from '../assets/team-member-4.png'
-import nabasophoto from '../assets/team-member-5.png.jpeg'
-import jonnahphoto from '../assets/team-member-6.jpeg'
-import mariaphoto from '../assets/team-member-7.jpeg'
-import mohithphoto from '../assets/team-member-8.png'
+import nabasophoto from '../assets/team-member-8.png'
+import jonnahphoto from '../assets/team-member-5.jpeg'
+import mariaphoto from '../assets/team-member-6.jpeg'
+import mohithphoto from '../assets/team-member-7.png'
 
 export function Team() {
   const teamMembers = [
