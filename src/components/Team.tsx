@@ -12,43 +12,43 @@ import mohithphoto from '../assets/team-member-8.jpeg'
 export function Team() {
   const teamMembers = [
     {
-      name: "NAHABWAMUKAMA PIUS",
+      name: "Mr. NAHABWAMUKAMA PIUS",
       role: "Microbiologist & CEO",
       image: ceophoto,
       articleLink: "https://www.panafricansciencehub.com/articles/982ed9d6-536b-4bfc-a2d1-b82447bdda0b", // Replace with actual article link
     },
     {
-      name: "ISINDE EMMANUEL",
+      name: "Mr. ISINDE EMMANUEL",
       role: "Social Scientist & Director of Partnerships",
       image: emmanuelphoto,
       articleLink: "https://www.panafricansciencehub.com/articles/5f7c15e9-7861-4b37-9ed7-ad31d52c8554", // Replace with actual article link
     },
     {
-      name: "MARIA VALERIA KOBUSINGE",
-      role: "Coordinator of Youth Education and Outreach",
-      image: mariaphoto,
-      articleLink: "https://www.panafricansciencehub.com/articles/fed389a5-8d14-4c36-9249-411c92e20d4c",
-    },
-    {
-      name: "SSEKIKUBO RONALD",
+      name: "Mr. SSEKIKUBO RONALD",
       role: "Pharmacologist & Director of Education",
       image: ronaladphoto,
       articleLink: "https://www.panafricansciencehub.com/articles/e2d0252f-1c93-4dce-9a06-a21e5e1a2c64", // Replace with actual article link
     },
     {
-      name: "AGABA JONNAH",
+      name: "Mrs. AGABA JONNAH",
       role: "Country Director Uganda",
       image: jonnahphoto,
       articleLink: "https://www.panafricansciencehub.com/articles/7affc86d-30db-4efd-ab95-41b476e2dbcb", // Replace with actual article link
     },
     {
-      name: "Mohith Maddala",
+      name: "Mrs. MARIA VALERIA KOBUSINGE",
+      role: "Coordinator of Youth Education and Outreach",
+      image: mariaphoto,
+      articleLink: "https://www.panafricansciencehub.com/articles/fed389a5-8d14-4c36-9249-411c92e20d4c",
+    },
+    {
+      name: "Mr. Mohith Maddala",
       role: "Lead Technical Consultant & Platform Architect",
       image: mohithphoto,
       articleLink: "#",
     },
     {
-      name: "SAMSON NABASA",
+      name: "Mr. SAMSON NABASA",
       role: "Biotechnologist & Chief Operations Officer",
       image: nabasophoto,
       articleLink: "https://www.panafricansciencehub.com/articles/ac74ea4a-8735-4e1e-b64d-df8d9d9e9fc4", // Replace with actual article link
