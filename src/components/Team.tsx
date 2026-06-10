@@ -3,10 +3,11 @@
 import { ImageWithFallback } from './figma/ImageWithFallback'
 import ceophoto from '../assets/team-member-1.png'
 import emmanuelphoto from '../assets/team-member-2.png'
-import ronaladphoto from '../assets/team-member-3.png'
-import nabasophoto from '../assets/team-member-4.png'
-import jonnahphoto from '../assets/team-member-5.png.jpeg'
-import mariaphoto from '../assets/team-member-6.jpeg'
+import seraphoto from '../assets/team-member-3.jpeg'
+import ronaladphoto from '../assets/team-member-4.png'
+import nabasophoto from '../assets/team-member-5.png'
+import jonnahphoto from '../assets/team-member-6.jpeg'
+import mariaphoto from '../assets/team-member-7.jpeg'
 import mohithphoto from '../assets/team-member-8.jpeg'
 
 export function Team() {
@@ -22,6 +23,12 @@ export function Team() {
       role: "Social Scientist & Director of Partnerships",
       image: emmanuelphoto,
       articleLink: "https://www.panafricansciencehub.com/articles/5f7c15e9-7861-4b37-9ed7-ad31d52c8554", // Replace with actual article link
+    },
+    {
+      name: "Mrs. Serena Kisakye",
+      role: "Head of Research and Innovation Sector",
+      image: seraphoto,
+      articleLink: "https://www.panafricansciencehub.com/articles/f7fb8a00-4fbd-4ebe-b5d5-65d117ae34ed", // Replace with actual article link
     },
     {
       name: "Mr. SSEKIKUBO RONALD",
@@ -45,7 +52,7 @@ export function Team() {
       name: "Mr. Mohith Maddala",
       role: "Lead Technical Consultant & Platform Architect",
       image: mohithphoto,
-      articleLink: "#",
+      articleLink: "https://www.panafricansciencehub.com/articles/d568d6f0-2232-45e9-a7e1-b55db705852e",
     },
     {
       name: "Mr. SAMSON NABASA",
