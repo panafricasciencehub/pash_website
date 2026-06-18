@@ -1,4 +1,8 @@
 import { Calendar, Target, Lightbulb, Clock } from 'lucide-react'
+import ann1 from '../assets/ann1 (1).jpeg'
+import ann2 from '../assets/ann1 (2).jpeg'
+import ann3 from '../assets/ann1 (3).jpeg'
+import { ImageWithFallback } from './figma/ImageWithFallback'
 
 const webinars = [
   {
@@ -93,6 +97,38 @@ export function Webinars() {
             <p className="mt-6 text-lg text-muted-foreground max-w-2xl leading-relaxed">
               Join our interactive sessions to explore frontier sciences, build meaningful connections, and foster innovation across the African continent.
             </p>
+          </div>
+        </div>
+
+        {/* Announcements Section */}
+        <div className="mb-24">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-8">
+            <div>
+              <div className="inline-flex items-center gap-3 mb-6">
+                <div className="w-3 h-3 bg-accent-blue rounded-full animate-pulse" />
+                <span className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">
+                  Latest Updates
+                </span>
+                <div className="w-3 h-3 bg-accent-purple rounded-full animate-pulse" />
+              </div>
+              <h3 className="text-3xl sm:text-4xl font-black leading-tight">
+                <span className="block">Announcements</span>
+              </h3>
+              <p className="mt-4 text-lg text-muted-foreground max-w-2xl leading-relaxed">
+                Stay up to date with our latest news, posters, and important announcements.
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[ann1, ann2, ann3].map((imgSrc, idx) => (
+              <div key={idx} className="group relative rounded-3xl overflow-hidden bg-card shadow-lg hover:shadow-2xl transition-all duration-500">
+                <ImageWithFallback 
+                  src={imgSrc} 
+                  alt={`Announcement ${idx + 1}`} 
+                  className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700" 
+                />
+              </div>
+            ))}
           </div>
         </div>
 
