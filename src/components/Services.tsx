@@ -52,6 +52,15 @@ export function Services() {
       rotation: 'rotate-3',
       image: 'https://i.pinimg.com/474x/e4/29/a7/e429a779f3d805f4bd597cbc95b628aa.jpg',
       link: 'https://academicearth.org/'
+    },
+    {
+      id: 'mitlearn',
+      title: "MIT Learn",
+      description: "Discover online courses and programs from across MIT to advance your career and personal goals.",
+      color: 'accent-emerald',
+      rotation: '-rotate-2',
+      image: 'https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202404/MIT-Learn-01_0.jpg',
+      link: 'https://learn.mit.edu/'
     }
 
   ]
