@@ -59,7 +59,7 @@ export function Services() {
       description: "Discover online courses and programs from across MIT to advance your career and personal goals.",
       color: 'accent-emerald',
       rotation: '-rotate-2',
-      image: 'https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202404/MIT-Learn-01_0.jpg',
+      image: 'https://learn.mit.edu/images/learn-og-image.jpg',
       link: 'https://learn.mit.edu/'
     }
 
