@@ -1,7 +1,6 @@
 import { Calendar, Target, Lightbulb, Clock } from 'lucide-react'
 import ann1 from '../assets/ann1 (1).jpeg'
 import ann2 from '../assets/ann1 (2).jpeg'
-import ann3 from '../assets/ann1 (3).jpeg'
 import { ImageWithFallback } from './figma/ImageWithFallback'
 
 const webinars = [
@@ -119,8 +118,8 @@ export function Webinars() {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[ann1, ann2, ann3].map((imgSrc, idx) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {[ann1, ann2].map((imgSrc, idx) => (
               <div key={idx} className="group relative rounded-3xl overflow-hidden bg-card shadow-lg hover:shadow-2xl transition-all duration-500">
                 <ImageWithFallback 
                   src={imgSrc} 
