@@ -102,6 +102,12 @@ export function Hero() {
                 Ongoing Projects
               </a>
               <a
+                href="#gallery"
+                className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
+              >
+                Gallery
+              </a>
+              <a
                 href="#about"
                 className="text-white hover:text-white/80 font-medium gentle-animation hover:scale-105"
               >
@@ -203,6 +209,13 @@ export function Hero() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Ongoing Projects
+              </a>
+              <a
+                href="#gallery"
+                className="mobile-menu-link px-4 py-3 hover:text-white/80 hover:bg-white/10 rounded-lg gentle-animation font-medium text-lg active:bg-white/20"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Gallery
               </a>
               <a
                 href="#about"
